@@ -1,0 +1,546 @@
+{
+  "kelvin": [
+    {
+      "amp_ratio": 20.2063,
+      "coherence": 0.405,
+      "rms_up": 0.0016,
+      "rms_dn": 0.03226,
+      "event": "KE01",
+      "zone": "Gilbert Islands"
+    },
+    {
+      "amp_ratio": 2.0337,
+      "coherence": 0.4295,
+      "rms_up": 0.00933,
+      "rms_dn": 0.01897,
+      "event": "KE01",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 0.2543,
+      "coherence": 0.1414,
+      "rms_up": 0.03254,
+      "rms_dn": 0.00828,
+      "event": "KE01",
+      "zone": "TIW zone"
+    },
+    {
+      "amp_ratio": 0.9428,
+      "coherence": 0.0142,
+      "rms_up": 0.01972,
+      "rms_dn": 0.0186,
+      "event": "KE02",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 1.1196,
+      "coherence": 0.2988,
+      "rms_up": 0.02123,
+      "rms_dn": 0.02377,
+      "event": "KE02",
+      "zone": "TIW zone"
+    },
+    {
+      "amp_ratio": 1.3959,
+      "coherence": 0.3944,
+      "rms_up": 0.02378,
+      "rms_dn": 0.0332,
+      "event": "KE03",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 1.5019,
+      "coherence": 0.4766,
+      "rms_up": 0.03026,
+      "rms_dn": 0.04544,
+      "event": "KE03",
+      "zone": "TIW zone"
+    },
+    {
+      "amp_ratio": 2.2057,
+      "coherence": 0.0961,
+      "rms_up": 0.01769,
+      "rms_dn": 0.03901,
+      "event": "KE04",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 0.2673,
+      "coherence": 0.0663,
+      "rms_up": 0.03066,
+      "rms_dn": 0.00819,
+      "event": "KE04",
+      "zone": "TIW zone"
+    },
+    {
+      "amp_ratio": 1.7525,
+      "coherence": 0.3013,
+      "rms_up": 0.01687,
+      "rms_dn": 0.02956,
+      "event": "KE05",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 0.2487,
+      "coherence": 0.6329,
+      "rms_up": 0.03024,
+      "rms_dn": 0.00752,
+      "event": "KE05",
+      "zone": "TIW zone"
+    },
+    {
+      "amp_ratio": 2.6276,
+      "coherence": 0.5155,
+      "rms_up": 0.01531,
+      "rms_dn": 0.04024,
+      "event": "KE06",
+      "zone": "Gilbert Islands"
+    },
+    {
+      "amp_ratio": 3.0149,
+      "coherence": 0.165,
+      "rms_up": 0.01316,
+      "rms_dn": 0.03966,
+      "event": "KE06",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 0.8318,
+      "coherence": 0.8724,
+      "rms_up": 0.04196,
+      "rms_dn": 0.0349,
+      "event": "KE06",
+      "zone": "TIW zone"
+    },
+    {
+      "amp_ratio": 2.6028,
+      "coherence": 0.3802,
+      "rms_up": 0.02177,
+      "rms_dn": 0.05666,
+      "event": "KE07",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 0.5884,
+      "coherence": 0.0856,
+      "rms_up": 0.06078,
+      "rms_dn": 0.03576,
+      "event": "KE07",
+      "zone": "TIW zone"
+    }
+  ],
+  "rossby": [
+    {
+      "amp_ratio": 0.393,
+      "coherence": 0.8605,
+      "rms_up": 0.03963,
+      "rms_dn": 0.01557,
+      "event": "KE01",
+      "zone": "Gilbert Islands"
+    },
+    {
+      "amp_ratio": 0.5986,
+      "coherence": 0.6847,
+      "rms_up": 0.0253,
+      "rms_dn": 0.01514,
+      "event": "KE01",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 0.5324,
+      "coherence": 0.6468,
+      "rms_up": 0.02462,
+      "rms_dn": 0.01311,
+      "event": "KE02",
+      "zone": "Gilbert Islands"
+    },
+    {
+      "amp_ratio": 0.696,
+      "coherence": 0.1757,
+      "rms_up": 0.02216,
+      "rms_dn": 0.01543,
+      "event": "KE02",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 1.0012,
+      "coherence": 0.1558,
+      "rms_up": 0.01728,
+      "rms_dn": 0.0173,
+      "event": "KE03",
+      "zone": "Gilbert Islands"
+    },
+    {
+      "amp_ratio": 1.7346,
+      "coherence": 0.0461,
+      "rms_up": 0.0125,
+      "rms_dn": 0.02168,
+      "event": "KE03",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 1.0257,
+      "coherence": 0.6498,
+      "rms_up": 0.01711,
+      "rms_dn": 0.01755,
+      "event": "KE04",
+      "zone": "Gilbert Islands"
+    },
+    {
+      "amp_ratio": 0.6421,
+      "coherence": 0.2796,
+      "rms_up": 0.0241,
+      "rms_dn": 0.01547,
+      "event": "KE04",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 0.7496,
+      "coherence": 0.8399,
+      "rms_up": 0.03348,
+      "rms_dn": 0.0251,
+      "event": "KE05",
+      "zone": "Gilbert Islands"
+    },
+    {
+      "amp_ratio": 1.3173,
+      "coherence": 0.8099,
+      "rms_up": 0.0333,
+      "rms_dn": 0.04387,
+      "event": "KE05",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 0.9162,
+      "coherence": 0.7416,
+      "rms_up": 0.03314,
+      "rms_dn": 0.03036,
+      "event": "KE06",
+      "zone": "Gilbert Islands"
+    },
+    {
+      "amp_ratio": 1.0274,
+      "coherence": 0.6809,
+      "rms_up": 0.04287,
+      "rms_dn": 0.04404,
+      "event": "KE06",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 0.6174,
+      "coherence": 0.5797,
+      "rms_up": 0.0349,
+      "rms_dn": 0.02155,
+      "event": "KE07",
+      "zone": "Gilbert Islands"
+    },
+    {
+      "amp_ratio": 2.7596,
+      "coherence": 0.5428,
+      "rms_up": 0.01276,
+      "rms_dn": 0.03521,
+      "event": "KE07",
+      "zone": "Line Islands"
+    }
+  ],
+  "stationary": [
+    {
+      "amp_ratio": 3.5856,
+      "coherence": 0.3284,
+      "rms_up": 0.00329,
+      "rms_dn": 0.01178,
+      "event": "KE01",
+      "zone": "Gilbert Islands"
+    },
+    {
+      "amp_ratio": 3.5856,
+      "coherence": 0.3284,
+      "rms_up": 0.00329,
+      "rms_dn": 0.01178,
+      "event": "KE01",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 3.5856,
+      "coherence": 0.3284,
+      "rms_up": 0.00329,
+      "rms_dn": 0.01178,
+      "event": "KE01",
+      "zone": "TIW zone"
+    },
+    {
+      "amp_ratio": 4.2916,
+      "coherence": 0.3129,
+      "rms_up": 0.00764,
+      "rms_dn": 0.0328,
+      "event": "KE02",
+      "zone": "Gilbert Islands"
+    },
+    {
+      "amp_ratio": 4.2916,
+      "coherence": 0.3129,
+      "rms_up": 0.00764,
+      "rms_dn": 0.0328,
+      "event": "KE02",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 4.2916,
+      "coherence": 0.3129,
+      "rms_up": 0.00764,
+      "rms_dn": 0.0328,
+      "event": "KE02",
+      "zone": "TIW zone"
+    },
+    {
+      "amp_ratio": 0.5261,
+      "coherence": 0.8502,
+      "rms_up": 0.04161,
+      "rms_dn": 0.02189,
+      "event": "KE03",
+      "zone": "Gilbert Islands"
+    },
+    {
+      "amp_ratio": 0.5261,
+      "coherence": 0.8502,
+      "rms_up": 0.04161,
+      "rms_dn": 0.02189,
+      "event": "KE03",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 0.5261,
+      "coherence": 0.8502,
+      "rms_up": 0.04161,
+      "rms_dn": 0.02189,
+      "event": "KE03",
+      "zone": "TIW zone"
+    },
+    {
+      "amp_ratio": 1.3407,
+      "coherence": 0.7405,
+      "rms_up": 0.01171,
+      "rms_dn": 0.0157,
+      "event": "KE04",
+      "zone": "Gilbert Islands"
+    },
+    {
+      "amp_ratio": 1.3407,
+      "coherence": 0.7405,
+      "rms_up": 0.01171,
+      "rms_dn": 0.0157,
+      "event": "KE04",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 1.3407,
+      "coherence": 0.7405,
+      "rms_up": 0.01171,
+      "rms_dn": 0.0157,
+      "event": "KE04",
+      "zone": "TIW zone"
+    },
+    {
+      "amp_ratio": 2.5913,
+      "coherence": 0.492,
+      "rms_up": 0.01059,
+      "rms_dn": 0.02745,
+      "event": "KE05",
+      "zone": "Gilbert Islands"
+    },
+    {
+      "amp_ratio": 2.5913,
+      "coherence": 0.492,
+      "rms_up": 0.01059,
+      "rms_dn": 0.02745,
+      "event": "KE05",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 2.5913,
+      "coherence": 0.492,
+      "rms_up": 0.01059,
+      "rms_dn": 0.02745,
+      "event": "KE05",
+      "zone": "TIW zone"
+    },
+    {
+      "amp_ratio": 1.4659,
+      "coherence": 0.0909,
+      "rms_up": 0.0214,
+      "rms_dn": 0.03137,
+      "event": "KE06",
+      "zone": "Gilbert Islands"
+    },
+    {
+      "amp_ratio": 1.4659,
+      "coherence": 0.0909,
+      "rms_up": 0.0214,
+      "rms_dn": 0.03137,
+      "event": "KE06",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 1.4659,
+      "coherence": 0.0909,
+      "rms_up": 0.0214,
+      "rms_dn": 0.03137,
+      "event": "KE06",
+      "zone": "TIW zone"
+    },
+    {
+      "amp_ratio": 0.5198,
+      "coherence": 0.7203,
+      "rms_up": 0.04443,
+      "rms_dn": 0.0231,
+      "event": "KE07",
+      "zone": "Gilbert Islands"
+    },
+    {
+      "amp_ratio": 0.5198,
+      "coherence": 0.7203,
+      "rms_up": 0.04443,
+      "rms_dn": 0.0231,
+      "event": "KE07",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 0.5198,
+      "coherence": 0.7203,
+      "rms_up": 0.04443,
+      "rms_dn": 0.0231,
+      "event": "KE07",
+      "zone": "TIW zone"
+    }
+  ],
+  "time_shifted": [
+    {
+      "amp_ratio": 1.8011,
+      "coherence": 0.2153,
+      "rms_up": 0.01176,
+      "rms_dn": 0.02118,
+      "event": "KE01",
+      "zone": "Gilbert Islands"
+    },
+    {
+      "amp_ratio": 1.2519,
+      "coherence": 0.0996,
+      "rms_up": 0.01654,
+      "rms_dn": 0.02071,
+      "event": "KE01",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 1.1032,
+      "coherence": 0.226,
+      "rms_up": 0.02031,
+      "rms_dn": 0.02241,
+      "event": "KE01",
+      "zone": "TIW zone"
+    },
+    {
+      "amp_ratio": 0.6466,
+      "coherence": 0.3277,
+      "rms_up": 0.02325,
+      "rms_dn": 0.01503,
+      "event": "KE02",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 3.1801,
+      "coherence": 0.6279,
+      "rms_up": 0.01447,
+      "rms_dn": 0.04602,
+      "event": "KE02",
+      "zone": "TIW zone"
+    },
+    {
+      "amp_ratio": 1.975,
+      "coherence": 0.386,
+      "rms_up": 0.0148,
+      "rms_dn": 0.02923,
+      "event": "KE03",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 0.3173,
+      "coherence": 0.1906,
+      "rms_up": 0.0296,
+      "rms_dn": 0.00939,
+      "event": "KE03",
+      "zone": "TIW zone"
+    },
+    {
+      "amp_ratio": 1.2212,
+      "coherence": 0.2762,
+      "rms_up": 0.0206,
+      "rms_dn": 0.02516,
+      "event": "KE04",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 0.3842,
+      "coherence": 0.0452,
+      "rms_up": 0.02075,
+      "rms_dn": 0.00797,
+      "event": "KE04",
+      "zone": "TIW zone"
+    },
+    {
+      "amp_ratio": 0.8321,
+      "coherence": 0.1257,
+      "rms_up": 0.03421,
+      "rms_dn": 0.02847,
+      "event": "KE05",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 0.8602,
+      "coherence": 0.208,
+      "rms_up": 0.03507,
+      "rms_dn": 0.03017,
+      "event": "KE05",
+      "zone": "TIW zone"
+    },
+    {
+      "amp_ratio": 1.2159,
+      "coherence": 0.3766,
+      "rms_up": 0.04509,
+      "rms_dn": 0.05482,
+      "event": "KE06",
+      "zone": "Gilbert Islands"
+    },
+    {
+      "amp_ratio": 1.7722,
+      "coherence": 0.0977,
+      "rms_up": 0.03379,
+      "rms_dn": 0.05989,
+      "event": "KE06",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 0.5464,
+      "coherence": 0.2716,
+      "rms_up": 0.06034,
+      "rms_dn": 0.03297,
+      "event": "KE06",
+      "zone": "TIW zone"
+    },
+    {
+      "amp_ratio": 0.7777,
+      "coherence": 0.5044,
+      "rms_up": 0.03371,
+      "rms_dn": 0.02622,
+      "event": "KE07",
+      "zone": "Line Islands"
+    },
+    {
+      "amp_ratio": 0.6693,
+      "coherence": 0.3586,
+      "rms_up": 0.02779,
+      "rms_dn": 0.0186,
+      "event": "KE07",
+      "zone": "TIW zone"
+    }
+  ]
+}

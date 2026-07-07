@@ -1,0 +1,6 @@
+Pettitt CP: 2016, K=341, p=0.004141
+Pre-2016 mean: 11.679 Mkm²
+Post-2016 mean: 10.332 Mkm² (-11.5%)
+Full trend: -0.0233 Mkm²/yr, R²=0.099, p=0.0292
+Pre-2016 trend: 0.0221 Mkm²/yr, R²=0.414, p=0.0000
+Post-2016 trend: -0.3108 Mkm²/yr, R²=0.352, p=0.0544

@@ -1,0 +1,70 @@
+# P03 project configuration template
+# Copy this file to config.yaml and fill in your local paths.
+# config.yaml is in .gitignore — do NOT commit local paths.
+
+project:
+  name: P03-EddyPeripheryStrain
+  lead: Zhisheng Zhang
+
+paths:
+  # === Local Windows (H:\Eddy_SWOT\) ===
+  local:
+    swot_code: H:/Eddy_SWOT/swot_code
+    data: H:/Eddy_SWOT/data
+    figures: H:/Eddy_SWOT/fig
+
+  # === HPC (slurm/zhangzs) ===
+  hpc:
+    swot_code: /slurm/zhangzs/Eddy_SWOT/swot_code
+    data: /slurm/zhangzs/Eddy_SWOT/data
+    figures: /slurm/zhangzs/Eddy_SWOT/fig
+
+data:
+  swot:
+    product: L3 Expert v3.0
+    grid_km: 2
+    cycles: all available 2024-2025
+  duacs:
+    product: DT2024
+    grid_deg: 0.125
+  pet:
+    source: py-eddy-tracker on DUACS
+    atlas_ref: META3.1exp (Pegliasco et al. 2022)
+  sst:
+    candidate_products:
+      - GHRSST MUR (0.01 deg, ~1 km)
+      - Sentinel-3 SLSTR L2 (1 km)
+    note: "Need to evaluate cloud coverage for warm ring detection (~0.4°C signal, 1-10 km scale)"
+  chl:
+    candidate_products:
+      - MODIS Aqua L2
+      - VIIRS SNPP L2
+    note: "Use log Chl; ±1-3 day lag window"
+
+analysis:
+  region: Kuroshio Extension
+  eddy_catalog_size: 7057  # SWOT-eddy matches from st_03b
+  prototype_cases: 16
+
+  # Scale separation
+  filter_cutoffs_km: [30, 50, 70, 100]  # high-pass sensitivity
+
+  # r/R bins for annulus composite
+  rr_bins: [0, 0.5, 1.0, 1.5, 2.0, 3.0]
+
+  # Matched controls
+  controls:
+    A_same_swath_random: true
+    B_local_displaced: true  # 3-5R displacement
+    C_background_strain_matched: true
+    D_isolated_eddy_subset: true  # exclude neighbors < 3R
+
+  # Strain computation
+  swotdiag_kernel: 9  # 9-pt circular kernel, ~18 km fitting scale
+  smoothing_before_gradient_km: 6  # Archer 2025
+
+physics:
+  g: 9.81
+  f_midlat: 9.0e-5  # ~38°N for Kuroshio
+
+# P02 reference: config_template.yaml pattern
