@@ -49,12 +49,6 @@
 | OSI SAF 海冰产品 | EUMETSAT | https://osi-saf.eumetsat.int/ |
 | CryoSat-2 冰厚 | ESA/AWI | https://www.meereisportal.de/ |
 
-## 私有数据 / Proprietary
-
-| 数据集 | 来源 | 说明 |
-|---|---|---|
-| GNSS 波浪潮汐浮标 | 青岛安海 | 不在 GitHub 公开，项目内部共享 |
-
 ---
 
 *使用数据时务必在论文中正确引用数据集的 DOI 和版本号。*
