@@ -2,7 +2,7 @@
 # 使用 github-label-sync 或手动在 GitHub Settings > Labels 中创建
 #
 # 安装: npm install -g github-label-sync
-# 使用: github-label-sync --access-token TOKEN pangeo-data/OpenSCI-Ocean
+# 使用: github-label-sync --access-token TOKEN Firsteu92/OnlineSCI
 
 # Project labels
 - name: P01

@@ -1,6 +1,6 @@
 # Contributing Guide / 参与指南
 
-欢迎加入 OpenSCI-Ocean！本文档帮助你快速上手参与项目。
+欢迎加入 OnlineSCI！本文档帮助你快速上手参与项目。
 
 ## 快速开始
 
@@ -9,8 +9,8 @@
 ```bash
 # Fork 本仓库到你的 GitHub 账号（在 GitHub 页面点击 Fork 按钮）
 # 然后 clone 你的 fork
-git clone https://github.com/YOUR_USERNAME/OpenSCI-Ocean.git
-cd OpenSCI-Ocean
+git clone https://github.com/YOUR_USERNAME/OnlineSCI.git
+cd OnlineSCI
 git remote add upstream https://github.com/pangeo-data/OpenSCI-Ocean.git
 ```
 

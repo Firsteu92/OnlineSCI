@@ -1,4 +1,4 @@
-# OpenSCI-Ocean
+# OnlineSCI
 
 **AI-assisted open research framework for physical oceanography and ocean remote sensing.**
 
@@ -8,7 +8,7 @@
 
 ## Overview / 概述
 
-OpenSCI-Ocean 是一个面向物理海洋学和海洋遥感的开放研究框架。每个方向在独立目录下自包含运行，包含完整的文献调研、分析脚本、图表、论文手稿和 AI 交互日志。框架设计为可复制、可扩展的研究结构，适用于并行推进多个课题。
+OnlineSCI 是一个面向物理海洋学和海洋遥感的开放研究框架。每个方向在独立目录下自包含运行，包含完整的文献调研、分析脚本、图表、论文手稿和 AI 交互日志。框架设计为可复制、可扩展的研究结构，适用于并行推进多个课题。
 
 ## Projects / 研究方向
 
@@ -36,7 +36,7 @@ pXX/
 ## Repository Structure / 仓库结构
 
 ```
-OpenSCI-Ocean/
+OnlineSCI/
 ├── README.md                 # 本文件
 ├── COLLABORATION.md          # 协作规则、署名、工作流
 ├── CONTRIBUTORS.md           # 贡献者追踪
