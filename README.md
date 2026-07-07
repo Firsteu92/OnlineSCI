@@ -1,138 +1,82 @@
 # OpenSCI-Ocean
 
-**10 parallel experiments: Can AI drive Nature-level papers in ocean science?**
+**AI-assisted open research framework for physical oceanography and ocean remote sensing.**
 
-10 个研究方向并行推进。AI 从选题到投稿全流程主导，人类负责物理把关和审核纠偏。全过程公开。
+多研究方向并行推进的开放科学研究框架。AI 辅助文献调研、数据分析、图表生成和论文撰写，人类科学家负责物理把关和审核纠偏。研究过程全程公开。
 
 ---
 
-## What This Is
+## Overview / 概述
 
-10 independent research projects, each exploring a different scientific question in physical oceanography and ocean remote sensing. AI (Claude, GPT, etc.) serves as the primary research engine — literature review, data analysis, figure generation, manuscript writing. Human scientists provide physical intuition, error checking, and quality control.
+OpenSCI-Ocean 是一个面向物理海洋学和海洋遥感的开放研究框架。每个方向在独立目录下自包含运行，包含完整的文献调研、分析脚本、图表、论文手稿和 AI 交互日志。框架设计为可复制、可扩展的研究结构，适用于并行推进多个课题。
 
-Each project runs on a fast cycle:
+## Projects / 研究方向
+
+当前框架预留了多个研究方向位（P01-P10），每个方向在 [projects/](projects/) 下独立管理。
+
+- [项目总览](projects/DASHBOARD.md) — 框架结构和启用手册
+- [项目模板](projects/PROJECT_TEMPLATE.md) — 新项目初始化模板
+
+每个研究方向目录自包含以下结构：
 
 ```
-Day 0         Day 1            Day 2-3           Day 4-7          Day 7+
-Topic lock → AI first draft → Human review → Internal review → Submit
+pXX/
+├── README.md          # 项目信息卡片：科学问题、状态、数据链接
+├── literature/        # AI 文献调研笔记
+├── analysis/          # 分析脚本
+├── figures/           # 图表文件
+├── manuscript/        # 论文手稿全版本管理
+│   ├── v1_ai_draft/  # AI 生成初稿
+│   ├── v2_delivery/  # 人类审查交付稿
+│   ├── v3_final/     # 内部评审定稿
+│   └── submitted/    # 投稿版本
+└── logs/             # AI 交互日志
 ```
 
-Failures, dead ends, and rejections are part of the experiment and will be visible.
-
-## Projects
-
-See [projects/DASHBOARD.md](projects/DASHBOARD.md) for live status of all 10 projects.
-
-| # | Direction | Status | Journal |
-|---|---|---|---|
-| [P01](projects/p01/) | Submesoscale air-sea coupling regime transition (SWOT) | 🔬 D0 Explore | — |
-| [P02](projects/p02/) | Equatorial Kelvin wave topological robustness (SWOT + altimetry) | ✅ D1 Complete — 投稿就绪 | Nature Comm. |
-| [P03](projects/p03/) | Neglected eddy boundary signals (SWOT altimetry) | 🔬 D0 Explore | — |
-| [P04](projects/p04/) | Wave-ice feedback: swell attenuation at Antarctic ice edge | ✅ D1 Complete — 投稿就绪 | Nature Comm. |
-| [P05](projects/p05/) | Deep ocean mixing energy deficit — SWOT SSH constraints | ✍️ D1 | — |
-| [P06](projects/p06/) | TBD | ⬜ | — |
-| [P07](projects/p07/) | TBD | ⬜ | — |
-| [P08](projects/p08/) | TBD | ⬜ | — |
-| [P09](projects/p09/) | TBD | ⬜ | — |
-| [P10](projects/p10/) | TBD | ⬜ | — |
-
-Each project is self-contained in its own directory with literature, analysis scripts, figures, manuscript, and AI interaction logs.
-
-## Research Scope
-
-**Target journals:** Nature Geoscience, Nature Climate Change, Nature Communications, and other high-impact journals.
-
-**Directions include (not limited to):**
-- Satellite ocean dynamic remote sensing (altimetry, SWOT, SAR)
-- Physical oceanography (mesoscale eddies, submesoscale dynamics, internal waves)
-- Air-sea interaction
-- Polar ocean and cryosphere
-
-## Tools & Data
-
-**AI:** Claude, GPT, and other LLMs as the core production tool
-
-**Software:** Python, MATLAB, GMT
-
-**Public data:** SWOT L3/L4, CMEMS, ERA5, Argo, AVISO, WOD, etc.
-
-**In-situ observations:** GNSS wave-tide integrated buoys developed by Qingdao Anhai, with continuous field measurements across multiple sea areas. Some data remain unpublished — suitable for satellite validation or independent research.
-
-## How to Participate
-
-Each project operates independently. You can join one or more projects based on your expertise and interest. Authorship is per-project, based on actual contributions tracked via GitHub.
-
-**Ways to contribute:**
-- **Ideas & hypotheses** — A question worth asking but no time to pursue? AI can run the exploration.
-- **Physical-intuition review** — Judge whether AI's analysis makes physical sense.
-- **Error checking** — Catch hallucinated references, wrong magnitudes, skipped derivations.
-- **Literature tracking** — Confirm novelty, find benchmark papers.
-
-**To join:** Open an Issue, submit a PR, or contact via WeChat group (see [recruitment post](docs/recruitment_cn.md)).
-
-## Repository Structure
+## Repository Structure / 仓库结构
 
 ```
 OpenSCI-Ocean/
-├── README.md                 # This file
-├── COLLABORATION.md          # Rules, authorship, workflow
-├── CONTRIBUTORS.md           # Contribution tracking
+├── README.md                 # 本文件
+├── COLLABORATION.md          # 协作规则、署名、工作流
+├── CONTRIBUTORS.md           # 贡献者追踪
 ├── LICENSE                   # MIT
 ├── projects/
-│   ├── DASHBOARD.md          # Status overview of all 10 projects
-│   ├── PROJECT_TEMPLATE.md   # Template for new projects
-│   ├── p01/                  # Project 01 (independent, self-contained)
-│   │   ├── README.md         # Project card: question, status, data links
-│   │   ├── literature/       # AI literature review notes
-│   │   ├── analysis/         # Scripts + data source links (no raw data)
-│   │   ├── figures/          # All generated figures (incl. intermediate)
-│   │   ├── manuscript/
-│   │   │   ├── v1_ai_draft/  # AI-generated first draft
-│   │   │   ├── v2_delivery/  # Human-reviewed delivery draft
-│   │   │   ├── v3_final/     # Internally reviewed final draft
-│   │   │   └── submitted/    # Submitted version + cover letter
-│   │   └── logs/             # AI prompt logs
-│   ├── p02/ ... p10/         # Projects 02-10 (same structure)
-├── shared/                   # Shared utilities
-└── docs/                     # General documentation
+│   ├── DASHBOARD.md          # 框架结构总览
+│   ├── PROJECT_TEMPLATE.md   # 新项目模板
+│   ├── p01/ ... p10/         # 各研究方向（独立自包含）
+├── shared/                   # 共享工具和配置
+│   ├── ai_workflow.md        # AI Prompt 模板
+│   ├── data_sources.md       # 公开数据源目录
+│   └── environment.yml       # Conda 环境配置
+└── docs/                     # 通用文档
 ```
 
-**No raw data in this repo.** GitHub stores only data source links, download scripts, analysis code, figures, and the complete manuscript evolution from AI draft to final submission.
+## Rules & Documentation / 规范文档
 
-## Key Questions
+| 文档 | 用途 |
+|------|------|
+| [COLLABORATION.md](COLLABORATION.md) | 署名、角色分工、工作流、数据策略 |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Fork、分支、PR 规范 |
+| [REVIEW_CHECKLIST.md](REVIEW_CHECKLIST.md) | 审查检查清单 |
+| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | 行为准则 |
+| [CONTRIBUTORS.md](CONTRIBUTORS.md) | 贡献者追踪板 |
+| [shared/ai_workflow.md](shared/ai_workflow.md) | 各阶段 AI Prompt 模板 |
+| [shared/data_sources.md](shared/data_sources.md) | 公开数据源目录 |
+| [shared/environment.yml](shared/environment.yml) | Conda 环境配置 |
 
-1. What percentage of a high-quality paper can AI complete independently?
-2. Where does it fail most in mechanism-driven disciplines?
-3. What is the irreplaceable human contribution?
-4. How fast can this human-AI loop produce publishable science?
+### 基本原则
 
-## Rules & Documentation
+- 每个方向独立署名，遵循 [CRediT](https://credit.niso.org/) 分类体系
+- AI 使用在每个手稿中完全披露
+- 零容忍虚假引用
+- 仓库不存储原始数据，仅保留数据链接和脚本
+- 计算在本地或租赁服务器完成
 
-| Document | Purpose |
-|---|---|
-| [COLLABORATION.md](COLLABORATION.md) | Authorship, roles, workflow, IP, data policy |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | How to fork, branch, commit, PR |
-| [REVIEW_CHECKLIST.md](REVIEW_CHECKLIST.md) | D2/D3 stage review checklists |
-| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Behavioral expectations |
-| [CONTRIBUTORS.md](CONTRIBUTORS.md) | Contribution tracking board |
-| [shared/ai_workflow.md](shared/ai_workflow.md) | AI prompt templates for each stage |
-| [shared/data_sources.md](shared/data_sources.md) | Public data source directory |
-| [shared/environment.yml](shared/environment.yml) | Conda environment setup |
-
-**Essentials:**
-- Authorship per project, following [CRediT](https://credit.niso.org/) taxonomy
-- AI usage fully disclosed in each manuscript
-- Zero tolerance for hallucinated citations
-- No raw data in repo — only links and scripts
-- Computation on local machines or rented servers
-- This is an experiment, not a guarantee
-
-## License
+## License / 许可
 
 MIT License. See [LICENSE](LICENSE).
 
 ---
 
-*10 experiments. Some will fail. All will be visible. If you want to find where AI's real boundary lies in scientific research, join us.*
-
-*10 个实验。有的会失败。全部公开。想找到 AI 做科研的真实边界在哪里，来一起折腾。*
+*Framework adapted from [OpenSCI-Ocean](https://github.com/pangeo-data/OpenSCI-Ocean) (Pangeo community, MIT License).*

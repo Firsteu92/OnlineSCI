@@ -1,50 +1,49 @@
 # Project Dashboard / 项目看板
 
-> 10 个研究方向并行推进。每个项目的状态在这里一目了然。
+> 多研究方向并行推进的开放研究框架。每个方向的结构和进展一目了然。
 
-## 项目生命周期
+## 框架结构
 
-每个项目遵循以下节奏：
+当前预留 **10 个研究方向位（P01–P10）**，每个方向独立自包含。
 
-```
-Day 0        Day 1           Day 2-3          Day 4-7        Day 7+
-选题确认 → AI 初稿生成 → 人类审查交付稿 → 内部评审定稿 → 投稿
-  D0          D1              D2               D3             D4
-```
+| # | 方向 | 状态 | 链接 |
+|---|------|------|------|
+| P01 | 待定 | ⬜ Pending | [README](p01/README.md) |
+| P02 | 待定 | ⬜ Pending | [README](p02/README.md) |
+| P03 | 待定 | ⬜ Pending | [README](p03/README.md) |
+| P04 | 待定 | ⬜ Pending | [README](p04/README.md) |
+| P05 | 待定 | ⬜ Pending | [README](p05/README.md) |
+| P06 | 待定 | ⬜ Pending | [README](p06/README.md) |
+| P07 | 待定 | ⬜ Pending | [README](p07/README.md) |
+| P08 | 待定 | ⬜ Pending | [README](p08/README.md) |
+| P09 | 待定 | ⬜ Pending | [README](p09/README.md) |
+| P10 | 待定 | ⬜ Pending | [README](p10/README.md) |
 
-| 阶段 | 代号 | 内容 | 时间 |
-|---|---|---|---|
-| D0: Explore | 🔬 | 选题确认、文献快速调研、判断新颖性 | < 1 天 |
-| D1: Draft | ✍️ | AI 生成初稿（文献综述 + 数据分析 + 图表 + 全文） | 1 天 |
-| D2: Deliver | 📦 | 人类审查纠偏、物理把关、打磨交付稿 | 2-3 天 |
-| D3: Review | 🔍 | 模拟审稿、查漏补缺、定稿 | ~3 天 |
-| D4: Submit | 🚀 | 格式检查、Cover Letter、正式投稿 | 1 天 |
+### 阶段定义
 
-## 状态总览
+| 阶段 | 代号 | 内容 |
+|------|------|------|
+| ⬜ Pending | — | 待启动 |
+| 🔬 Explore | D0 | 选题确认、文献快速调研、可行性判断 |
+| ✍️ Draft | D1 | AI 生成初稿 |
+| 📦 Deliver | D2 | 人类审查纠偏、物理把关 |
+| 🔍 Review | D3 | 模拟审稿、查漏补缺、定稿 |
+| 🚀 Submit | D4 | 格式检查、正式投稿 |
+| 📝 Revision | — | 修改中 |
+| ✅ Accepted | — | 已接收 |
+| ❌ Rejected | — | 被拒 |
 
-| # | 方向 | 状态 | 负责人 | 启动日期 | 目标期刊 | 链接 |
-|---|---|---|---|---|---|---|
-| P01 | Scale-Dependent Regime Transition in Submesoscale Air-Sea Coupling | 🔬 D0 候选 | Kris19999 | 2026-06-05 | NC / GRL | [README](p01/README.md) |
-| P02 | Conditional robustness of equatorial Kelvin waves (multi-mission altimetry + SWOT) | ✅ D1 投稿就绪 | (待确认) | 2026-06-07 | Nature Communications | [README](p02/README.md) |
-| P03 | Eddy-periphery fine-scale strain enhancement (SWOT) | 📦 D2 审查中 | Zhisheng Zhang | 2026-06-05 | Nature Communications | [README](p03/README.md) |
-| P04 | Antarctic sea ice retreated into pre-existing waves: swell attenuation mechanism | ✅ D1 投稿就绪 | Tim | 2026-06-08 | Nature Communications | [README](p04/README.md) |
-| P05 | Deep ocean mixing energy deficit — SWOT SSH constraints | ✍️ D1 进行中 | Lujunkui | 2026-06-08 | — | [README](p05/README.md) |
-| P06 | TBD | ⬜ Pending | — | — | — | — |
-| P07 | TBD | ⬜ Pending | — | — | — | — |
-| P08 | TBD | ⬜ Pending | — | — | — | — |
-| P09 | TBD | ⬜ Pending | — | — | — | — |
-| P10 | TBD | ⬜ Pending | — | — | — | — |
+## 目录规范
 
-### 状态图例
+每个项目目录遵循统一结构，详见 [PROJECT_TEMPLATE.md](PROJECT_TEMPLATE.md)。
 
-- ⬜ Pending — 待启动
-- 🔬 Explore — 选题调研中
-- ✍️ Draft — AI 初稿生成中
-- 📦 Deliver — 人类审查中
-- 🔍 Review — 内部评审中
-- 🚀 Submit — 已投稿
-- 📝 Revision — 修改中
-- ✅ Accepted — 已接收
-- ❌ Rejected — 被拒（可转投或放弃）
+## 启用新项目
 
-*最后更新：2026-06-20*
+1. 复制 `PROJECT_TEMPLATE.md` 中的模板
+2. 填写科学问题、假设和初步数据方案
+3. 更新此看板的状态行
+4. 开始 D0 调研
+
+---
+
+*最后更新：2026-07-07*
