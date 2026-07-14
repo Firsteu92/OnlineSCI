@@ -1,0 +1,13 @@
+# Data Manifest
+# List all datasets used in this project.
+
+datasets:
+  - id: ""
+    source: ""
+    url: ""
+    version: ""
+    access_date: ""
+    license: ""
+    checksum: ""
+    notes: ""
+

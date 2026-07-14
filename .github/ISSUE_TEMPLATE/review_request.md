@@ -1,6 +1,6 @@
 ---
 name: Review Request / 审查请求
-about: Request a review from domain experts or collaborators
+about: Request a review for a specific project stage
 title: "[P##] Review: "
 labels: review
 ---
@@ -9,15 +9,29 @@ labels: review
 
 P##: [项目名称]
 
+## Review Type / 审查类型
+
+- [ ] S7 内部审查（Internal Review）
+- [ ] S8 投稿前审查（Pre-Submission Review）
+- [ ] 其他（Other）
+
+## Current Stage / 当前阶段
+
+S#
+
+## Related Gate / 相关门槛
+
+G#
+
 ## What Needs Review / 需要审查什么
 
 - [ ] 科学问题与假设
 - [ ] 数据分析方法
-- [ ] AI 生成的初稿
+- [ ] AI 生成的输出
 - [ ] 图表质量
 - [ ] 文献引用真实性
-- [ ] 物理机制解释
-- [ ] 完整论文（D3 内部评审）
+- [ ] 方法正确性
+- [ ] 完整论文审查
 
 ## Materials / 审查材料
 

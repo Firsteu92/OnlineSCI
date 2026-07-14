@@ -1,0 +1,23 @@
+# Run Manifest — 运行清单
+run_id: ""
+date: ""
+experiment: ""
+protocol_version: ""
+code_version: ""
+parameters: {}
+environment:
+  os: ""
+  python_version: ""
+  dependencies: ""
+results:
+  metrics: {}
+  outputs: []
+audit:
+  protocol_compliance: pending
+  data_leak: pending
+  temporal_leak: pending
+  spatial_leak: pending
+  label_leak: pending
+  reproducibility: pending
+status: exploratory
+notes: ""

@@ -1,0 +1,15 @@
+name: online_sci
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - pandas
+  - xarray
+  - netcdf4
+  - matplotlib
+  - jupyter
+  - jupyterlab
+  - pip

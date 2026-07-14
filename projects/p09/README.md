@@ -1,47 +1,32 @@
-# P09: [项目标题 / Project Title]
+# P09: 项目入口
 
-> 一句话描述这个项目要回答的核心科学问题。
+> 此项目位为空白模板，等待填写研究内容。
 
-## Status / 状态
+## 快速开始
 
-| 项 | 内容 |
-|---|---|
-| 当前阶段 | ⬜ Pending |
-| 负责人 | — |
-| 目标期刊 | — |
-| 启动日期 | — |
-| 预计投稿 | — |
+1. 阅读 `PROJECT.md` 了解项目模板结构
+2. 填写 `project.yml` 中的基本信息
+3. 按照 `AI_WORKFLOW_GUIDE.md` 从 S0 阶段开始
+4. 使用 `prompts/S0_project_setup.md` 建立项目
 
-## Scientific Question / 科学问题
+## 项目状态
 
-*这个项目试图回答什么问题？为什么重要？*
+请查看 [STATUS.md](STATUS.md) 了解当前状态。
 
-## Hypothesis / 假设
+## 标准目录结构
 
-*核心假设是什么？AI 将如何验证它？*
-
-## Data / 数据
-
-- 公开数据：
-
-## Method / 方法
-
-*分析思路和技术路线概述*
-
-## Progress Log / 进度日志
-
-| 日期 | 阶段 | 内容 | 产出 |
-|---|---|---|---|
-| | D0 | | |
-
-## Key Findings / 关键发现
-
-*随项目推进更新*
-
-## AI Interaction Log / AI 交互日志
-
-*关键 Prompt 和 AI 输出摘要记录在此，或链接到 `logs/` 下的详细日志文件*
-
-## References / 参考文献
-
-*经人工核验的参考文献列表*
+```
+idea/          — 研究想法和提案
+literature/    — 文献综述和参考文献
+protocols/     — 实验协议
+data/          — 数据 Manifest 和校验信息
+code/          — 代码
+analysis/      — 分析脚本
+runs/          — 实验运行记录
+results/       — 结果汇总
+evidence/      — 证据账本
+figures/       — 图表
+manuscript/    — 论文手稿
+logs/          — AI 交互日志
+handoff/       — 项目交接文档
+```

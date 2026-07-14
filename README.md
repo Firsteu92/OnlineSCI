@@ -1,82 +1,85 @@
 # OnlineSCI
 
-**AI-assisted open research framework for physical oceanography and ocean remote sensing.**
+**标准化 AI 辅助科研工作流工具包**
 
-多研究方向并行推进的开放科学研究框架。AI 辅助文献调研、数据分析、图表生成和论文撰写，人类科学家负责物理把关和审核纠偏。研究过程全程公开。
+一套从 GitHub 下载即可使用的开源科研工作流框架。提供标准化阶段（S0–S8）、质量门槛（G0–G5）、可复制的 Prompt 模板、Agent Skills 规范和空白项目模板，帮助研究者在任意 AI Agent（ChatGPT、Claude、Codex、Cursor 等）中执行结构化科研任务。
 
 ---
 
-## Overview / 概述
+## 核心概念
 
-OnlineSCI 是一个面向物理海洋学和海洋遥感的开放研究框架。每个方向在独立目录下自包含运行，包含完整的文献调研、分析脚本、图表、论文手稿和 AI 交互日志。框架设计为可复制、可扩展的研究结构，适用于并行推进多个课题。
+| 概念 | 说明 |
+|------|------|
+| **S0–S8** | 科研全生命周期标准阶段：从项目建立到投稿归档 |
+| **G0–G5** | 六道质量门槛：每阶段产出必须通过对应门槛才能进入下一阶段 |
+| **Skills** | 12 个标准 Agent 任务规范：规定输入、步骤、禁止事项和产出 |
+| **Prompts** | 可直接复制使用的 Agent 提示词，每阶段对应 1–2 个 |
+| **Checklists** | 人工审查清单：确保 Agent 输出经人类核验 |
+| **P01–P10** | 十个空白项目位：结构一致，可同时推进多个研究方向 |
 
-## Projects / 研究方向
+## 快速开始
 
-当前框架预留了多个研究方向位（P01-P10），每个方向在 [projects/](projects/) 下独立管理。
-
-- [项目总览](projects/DASHBOARD.md) — 框架结构和启用手册
-- [项目模板](projects/PROJECT_TEMPLATE.md) — 新项目初始化模板
-
-每个研究方向目录自包含以下结构：
-
-```
-pXX/
-├── README.md          # 项目信息卡片：科学问题、状态、数据链接
-├── literature/        # AI 文献调研笔记
-├── analysis/          # 分析脚本
-├── figures/           # 图表文件
-├── manuscript/        # 论文手稿全版本管理
-│   ├── v1_ai_draft/  # AI 生成初稿
-│   ├── v2_delivery/  # 人类审查交付稿
-│   ├── v3_final/     # 内部评审定稿
-│   └── submitted/    # 投稿版本
-└── logs/             # AI 交互日志
+```text
+1. 下载或克隆本仓库
+2. 阅读 QUICK_START → 选择空白 P01–P10
+3. 在 AI_WORKFLOW_GUIDE 中判断当前阶段
+4. 复制对应 Prompt 到任意 Agent 执行
+5. 按 G0–G5 和 Checklist 人工核验 Agent 输出
+6. 将结果保存到规定项目目录
+7. 有协作需求时通过 GitHub Issue/PR 开展交流
 ```
 
-## Repository Structure / 仓库结构
+详见 [docs/QUICK_START.md](docs/QUICK_START.md)。
+
+## 仓库结构
 
 ```
 OnlineSCI/
 ├── README.md                 # 本文件
-├── COLLABORATION.md          # 协作规则、署名、工作流
-├── CONTRIBUTORS.md           # 贡献者追踪
-├── LICENSE                   # MIT
-├── projects/
-│   ├── DASHBOARD.md          # 框架结构总览
-│   ├── PROJECT_TEMPLATE.md   # 新项目模板
-│   ├── p01/ ... p10/         # 各研究方向（独立自包含）
-├── shared/                   # 共享工具和配置
-│   ├── ai_workflow.md        # AI Prompt 模板
-│   ├── data_sources.md       # 公开数据源目录
-│   └── environment.yml       # Conda 环境配置
-└── docs/                     # 通用文档
+├── AI_WORKFLOW_GUIDE.md      # S0–S8 用户工作流指南
+├── SKILL_INDEX.md            # 任务导航表
+├── SYSTEM.md                 # 系统概述
+├── CLAUDE.md                 # Claude Code 操作规则
+├── LICENSE                   # CC BY-NC-SA 4.0
+├── LICENSES.md               # 许可证说明
+├── NOTICE.md                 # 致谢
+├── THIRD_PARTY_NOTICES.md    # 第三方版权声明
+├── CODE_OF_CONDUCT.md        # 行为准则
+├── CONTRIBUTING.md           # 参与指南
+├── COLLABORATION.md          # 协作制度
+├── CONTRIBUTORS.md           # 贡献者记录
+├── REVIEW_CHECKLIST.md       # 审查清单
+│
+├── docs/                     # 文档
+├── prompts/                  # 用户可直接复制的 Prompt
+├── skills/                   # Agent 任务规范（SKILL.md）
+├── checklists/               # G0–G5 人工审查清单
+├── templates/                # 项目模板文件
+├── projects/                 # 实际科研项目（P01–P10）
+│   ├── DASHBOARD.md          # 项目总览看板
+│   ├── _template/            # 空白项目模板
+│   └── p01/ … p10/           # 十个空白项目位
+└── shared/                   # 共享资源
 ```
 
-## Rules & Documentation / 规范文档
+## 文档索引
 
-| 文档 | 用途 |
-|------|------|
-| [COLLABORATION.md](COLLABORATION.md) | 署名、角色分工、工作流、数据策略 |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | Fork、分支、PR 规范 |
-| [REVIEW_CHECKLIST.md](REVIEW_CHECKLIST.md) | 审查检查清单 |
-| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | 行为准则 |
-| [CONTRIBUTORS.md](CONTRIBUTORS.md) | 贡献者追踪板 |
-| [shared/ai_workflow.md](shared/ai_workflow.md) | 各阶段 AI Prompt 模板 |
-| [shared/data_sources.md](shared/data_sources.md) | 公开数据源目录 |
-| [shared/environment.yml](shared/environment.yml) | Conda 环境配置 |
+| 文档 | 用途 | 适合读者 |
+|------|------|----------|
+| [QUICK_START](docs/QUICK_START.md) | 5 分钟掌握系统使用 | 新用户 |
+| [AI_WORKFLOW_GUIDE](AI_WORKFLOW_GUIDE.md) | S0–S8 完整工作流指南 | 所有用户 |
+| [SKILL_INDEX](SKILL_INDEX.md) | 根据任务查找对应 Skill 和 Prompt | 所有用户 |
+| [STAGE_GATES](docs/STAGE_GATES.md) | G0–G5 门槛正式文本 | 所有用户 |
+| [SYSTEM](SYSTEM.md) | 系统设计说明 | 维护者 |
+| [COLLABORATION](COLLABORATION.md) | 署名、分工、协作规则 | 协作者 |
+| [CONTRIBUTING](CONTRIBUTING.md) | Fork、分支、PR 规范 | 协作者 |
+| [GITHUB_COLLABORATION](docs/GITHUB_COLLABORATION.md) | GitHub 使用规范 | 协作者 |
+| [AI_USAGE_AND_LOGGING](docs/AI_USAGE_AND_LOGGING.md) | AI 披露和日志规范 | 所有用户 |
+| [DATA_MANAGEMENT](docs/DATA_MANAGEMENT.md) | 数据管理政策 | 所有用户 |
+| [REVIEW_CHECKLIST](REVIEW_CHECKLIST.md) | 人工审查检查清单 | 审查者 |
 
-### 基本原则
+## 许可
 
-- 每个方向独立署名，遵循 [CRediT](https://credit.niso.org/) 分类体系
-- AI 使用在每个手稿中完全披露
-- 零容忍虚假引用
-- 仓库不存储原始数据，仅保留数据链接和脚本
-- 计算在本地或租赁服务器完成
+OnlineSCI v1 文档、工作流、Skills、Prompt、模板和检查清单采用 **CC BY-NC-SA 4.0** 许可。详见 [LICENSE](LICENSE) 和 [LICENSES.md](LICENSES.md)。
 
-## License / 许可
-
-MIT License. See [LICENSE](LICENSE).
-
----
-
-*Framework adapted from [OpenSCI-Ocean](https://github.com/pangeo-data/OpenSCI-Ocean) (Pangeo community, MIT License).*
+本项目包含源自 OpenSCI-Ocean（Pangeo 社区）的代码，按 MIT License 使用。详见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。

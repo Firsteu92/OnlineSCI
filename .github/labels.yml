@@ -36,22 +36,71 @@
   color: "17becf"
   description: "Project 10"
 
-# Stage labels
+# Stage labels (new S0-S8)
+- name: S0
+  color: "c5def5"
+  description: "Stage: Project setup"
+- name: S1
+  color: "bfd4f2"
+  description: "Stage: Literature & idea evaluation"
+- name: S2
+  color: "d4c5f9"
+  description: "Stage: Protocol freeze"
+- name: S3
+  color: "f9d0c4"
+  description: "Stage: Build and explore"
+- name: S4
+  color: "c2e0c6"
+  description: "Stage: Formal experiments"
+- name: S5
+  color: "a8d8a8"
+  description: "Stage: Validation and evidence"
+- name: S6
+  color: "e8c8a0"
+  description: "Stage: Paper logic and figures"
+- name: S7
+  color: "d0a0d0"
+  description: "Stage: Writing and review"
+- name: S8
+  color: "f0a0a0"
+  description: "Stage: Submission and archive"
+
+# Gate labels (G0-G5)
+- name: G0
+  color: "e0e0e0"
+  description: "Gate: Project card"
+- name: G1
+  color: "e0e0e0"
+  description: "Gate: Literature and innovation"
+- name: G2
+  color: "e0e0e0"
+  description: "Gate: Protocol freeze"
+- name: G3
+  color: "e0e0e0"
+  description: "Gate: Experiment and validation"
+- name: G4
+  color: "e0e0e0"
+  description: "Gate: Evidence ledger"
+- name: G5
+  color: "e0e0e0"
+  description: "Gate: Pre-submission"
+
+# Legacy stage labels (keep for existing issues)
 - name: D0-explore
   color: "c5def5"
-  description: "Stage: Topic exploration"
+  description: "Legacy — Stage: Topic exploration"
 - name: D1-draft
   color: "bfd4f2"
-  description: "Stage: AI draft generation"
+  description: "Legacy — Stage: AI draft generation"
 - name: D2-deliver
   color: "d4c5f9"
-  description: "Stage: Human review & delivery"
+  description: "Legacy — Stage: Human review & delivery"
 - name: D3-review
   color: "f9d0c4"
-  description: "Stage: Internal review"
+  description: "Legacy — Stage: Internal review"
 - name: D4-submit
   color: "c2e0c6"
-  description: "Stage: Submission"
+  description: "Legacy — Stage: Submission"
 
 # Type labels
 - name: idea

@@ -42,12 +42,5 @@ credentials.*
 # Local config (template is config_template.yaml)
 config.yaml
 
-# Dual-AI workflow files (contain skill references and infra details)
-CLAUDEA_GUIDE.md
-CLAUDEB_GUIDE.md
-HANDOFF_PROTOCOL.md
-COLLABORATION.md
-launch_claudeA.sh
-launch_claudeB.sh
-.claudeB_system.tmp
+# Claude internal config
 .claude/

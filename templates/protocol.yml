@@ -1,0 +1,19 @@
+# Protocol YAML — 实验协议结构化版本
+version: v001
+hypothesis: ""
+data:
+  source: ""
+  time_range: ""
+  spatial_range: ""
+  split: ""
+baseline:
+  method: ""
+  primary_metric: ""
+  secondary_metrics: []
+experiments:
+  main: ""
+  ablation: ""
+  robustness: ""
+  validation: ""
+failure_criteria: ""
+change_rules: ""

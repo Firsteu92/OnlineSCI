@@ -1,0 +1,25 @@
+project_id: P07
+title: ""
+status: blank
+stage: S0
+owner: ""
+created_at: ""
+updated_at: ""
+
+research_question: ""
+project_type: ""
+domain: ""
+
+gates:
+  G0: not_checked
+  G1: not_checked
+  G2: not_checked
+  G3: not_checked
+  G4: not_checked
+  G5: not_checked
+
+data_status: not_defined
+code_status: not_defined
+protocol_status: not_created
+evidence_status: not_created
+manuscript_status: not_started

@@ -9,8 +9,8 @@
 | GitHub ID | 姓名 | 贡献维度 (CRediT) | 关键 GitHub 记录 | 备注 |
 |---|---|---|---|---|
 | @yangleir | Yang Lei | Conceptualization, Supervision, Methodology | Project initiation | 项目发起人 |
-| @441837297 | Zhisheng Zhang | Conceptualization, Methodology, Writing – Original Draft | PR #1 (P03 D0 proposal) | P03 提案人 |
-| @Lujunkui | Lujunkui | Conceptualization, Software, Formal Analysis, Visualization, Writing – Original Draft | PR #2 (P04 D1), PR #3 (P05 D1) | P04/P05 分析与初稿 |
+| @441837297 | Zhisheng Zhang | Conceptualization, Methodology, Writing – Original Draft | PR #1 (P03 S0 proposal) | P03 提案人 |
+| @Lujunkui | Lujunkui | Conceptualization, Software, Formal Analysis, Visualization, Writing – Original Draft | PR #2 (P04 S1), PR #3 (P05 S1) | P04/P05 分析与初稿 |
 
 ## 贡献维度说明
 

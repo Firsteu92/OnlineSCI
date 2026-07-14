@@ -28,7 +28,3 @@ labels: idea
 ## Target Journal / 目标期刊
 
 *建议投稿到哪个期刊？*
-
-## Your Background / 你的背景
-
-*简要说明你在这个方向上的专业背景（可选）*
