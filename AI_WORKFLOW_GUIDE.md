@@ -21,10 +21,10 @@
 5. 列出已知资源、限制和预期产出
 
 ### 对应 Skills
-- [project-context](../skills/project-context/SKILL.md)
+- [project-context](skills/project-context/SKILL.md)
 
 ### 推荐 Prompt
-- [S0_project_setup.md](../prompts/S0_project_setup.md)
+- [S0_project_setup.md](prompts/S0_project_setup.md)
 
 ### 人类审查重点
 - [ ] 研究问题是否清晰、可检验
@@ -70,12 +70,12 @@
 5. 评估新颖性、科学意义、可验证性和可行性
 
 ### 对应 Skills
-- [deep-research](../skills/deep-research/SKILL.md)
-- [idea-evaluator](../skills/idea-evaluator/SKILL.md)
+- [deep-research](skills/deep-research/SKILL.md)
+- [idea-evaluator](skills/idea-evaluator/SKILL.md)
 
 ### 推荐 Prompt
-- [S1_deep_research.md](../prompts/S1_deep_research.md)（先做文献检索）
-- [S1_idea_evaluation.md](../prompts/S1_idea_evaluation.md)（再做创新判断）
+- [S1_deep_research.md](prompts/S1_deep_research.md)（先做文献检索）
+- [S1_idea_evaluation.md](prompts/S1_idea_evaluation.md)（再做创新判断）
 
 ### 人类审查重点
 - [ ] 核验 AI 列出的每篇文献是否真实存在
@@ -118,10 +118,10 @@
 6. 设定失败标准和协议变更规则
 
 ### 对应 Skills
-- [protocol-freezer](../skills/protocol-freezer/SKILL.md)
+- [protocol-freezer](skills/protocol-freezer/SKILL.md)
 
 ### 推荐 Prompt
-- [S2_protocol_freeze.md](../prompts/S2_protocol_freeze.md)
+- [S2_protocol_freeze.md](prompts/S2_protocol_freeze.md)
 
 ### 人类审查重点
 - [ ] 假设是否可检验
@@ -161,10 +161,10 @@
 
 ### 对应 Skills
 - 通用 Agent 编程能力
-- 参考 [experiment-auditor](../skills/experiment-auditor/SKILL.md) 的运行前检查规则
+- 参考 [experiment-auditor](skills/experiment-auditor/SKILL.md) 的运行前检查规则
 
 ### 推荐 Prompt
-- [S3_build_and_explore.md](../prompts/S3_build_and_explore.md)
+- [S3_build_and_explore.md](prompts/S3_build_and_explore.md)
 
 ### 人类审查重点
 - [ ] 数据处理流程是否正确
@@ -208,10 +208,10 @@ G2（与 S2 共同为 S4 做准备）
 6. 判定运行状态
 
 ### 对应 Skills
-- [experiment-auditor](../skills/experiment-auditor/SKILL.md)
+- [experiment-auditor](skills/experiment-auditor/SKILL.md)
 
 ### 推荐 Prompt
-- [S4_formal_experiments.md](../prompts/S4_formal_experiments.md)
+- [S4_formal_experiments.md](prompts/S4_formal_experiments.md)
 
 ### 人类审查重点
 - [ ] 实验是否严格遵循冻结协议
@@ -257,11 +257,11 @@ G2（与 S2 共同为 S4 做准备）
 5. 记录无证据和冲突声明
 
 ### 对应 Skills
-- [experiment-auditor](../skills/experiment-auditor/SKILL.md)
-- [evidence-ledger](../skills/evidence-ledger/SKILL.md)
+- [experiment-auditor](skills/experiment-auditor/SKILL.md)
+- [evidence-ledger](skills/evidence-ledger/SKILL.md)
 
 ### 推荐 Prompt
-- [S5_validation_and_evidence.md](../prompts/S5_validation_and_evidence.md)
+- [S5_validation_and_evidence.md](prompts/S5_validation_and_evidence.md)
 
 ### 人类审查重点
 - [ ] 证据是否真正支持声明
@@ -305,12 +305,12 @@ G2（与 S2 共同为 S4 做准备）
 5. 设计图件视觉层级
 
 ### 对应 Skills
-- [paper-logic-builder](../skills/paper-logic-builder/SKILL.md)
-- [scientific-figure-designer](../skills/scientific-figure-designer/SKILL.md)
+- [paper-logic-builder](skills/paper-logic-builder/SKILL.md)
+- [scientific-figure-designer](skills/scientific-figure-designer/SKILL.md)
 
 ### 推荐 Prompt
-- [S6_paper_logic.md](../prompts/S6_paper_logic.md)
-- [S6_scientific_figures.md](../prompts/S6_scientific_figures.md)
+- [S6_paper_logic.md](prompts/S6_paper_logic.md)
+- [S6_scientific_figures.md](prompts/S6_scientific_figures.md)
 
 ### 人类审查重点
 - [ ] 论文故事线是否清晰有力
@@ -351,14 +351,14 @@ G3、G4 必须已通过。
 4. 将问题返回正确阶段
 
 ### 对应 Skills
-- [paper-writer](../skills/paper-writer/SKILL.md)
-- [paper-polish](../skills/paper-polish/SKILL.md)
-- [pre-submission-reviewer](../skills/pre-submission-reviewer/SKILL.md)
+- [paper-writer](skills/paper-writer/SKILL.md)
+- [paper-polish](skills/paper-polish/SKILL.md)
+- [pre-submission-reviewer](skills/pre-submission-reviewer/SKILL.md)
 
 ### 推荐 Prompt
-- [S7_paper_writing.md](../prompts/S7_paper_writing.md)
-- [S7_paper_polish.md](../prompts/S7_paper_polish.md)
-- [S7_internal_review.md](../prompts/S7_internal_review.md)
+- [S7_paper_writing.md](prompts/S7_paper_writing.md)
+- [S7_paper_polish.md](prompts/S7_paper_polish.md)
+- [S7_internal_review.md](prompts/S7_internal_review.md)
 
 ### 写作权限
 - **G3 未通过**：只能写背景、文献、数据方法、实验计划和待验证提纲
@@ -401,11 +401,11 @@ G5（完成后进入 S8）
 4. 准备项目交接文档
 
 ### 对应 Skills
-- [pre-submission-reviewer](../skills/pre-submission-reviewer/SKILL.md)
-- [project-handoff](../skills/project-handoff/SKILL.md)
+- [pre-submission-reviewer](skills/pre-submission-reviewer/SKILL.md)
+- [project-handoff](skills/project-handoff/SKILL.md)
 
 ### 推荐 Prompt
-- [S8_submission_and_archive.md](../prompts/S8_submission_and_archive.md)
+- [S8_submission_and_archive.md](prompts/S8_submission_and_archive.md)
 
 ### 人类审查重点
 - [ ] 投稿材料是否齐全
